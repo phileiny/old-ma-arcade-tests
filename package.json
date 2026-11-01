@@ -1,0 +1,16 @@
+{
+  "name": "old-ma-arcade-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx --test --test-concurrency=1 tests/*.test.ts",
+    "test:rules": "tsx --test tests/rules.test.ts",
+    "test:multiplayer": "tsx --test tests/multiplayer.test.ts",
+    "test:project": "tsx --test tests/project.test.ts",
+    "test:original": "npm --prefix target test"
+  },
+  "devDependencies": {
+    "@colyseus/sdk": "0.18.9",
+    "tsx": "^4.19.3"
+  }
+}
